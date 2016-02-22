@@ -25,17 +25,3 @@ leaveANote.controller('MainCtrl', function(getAllNotes, $scope) {
   }
 
 });
-
-leaveANote.controller('FormCtrl', function($scope, getAllNotes) {
-
-  $scope.saveNote = function() {
-    var newPost = new getAllNotes();
-    newPost.name = $scope.form.name;
-    newPost.body = $scope.form.body;
-    newPost.date = Date.now();
-
-    newPost.$save();
-
-    $scope.$emit('submitted');
-  }
-});
