@@ -4,7 +4,7 @@ var leaveANote = angular.module('leaveANote', ['ngResource','angularUtils.direct
 
 
 leaveANote.factory('getAllNotes', function($resource) {
-  return $resource('http://localhost:8080/api/projects/notes/');
+  return $resource('http://mikedettmer.com/api/projects/notes/');
 });
 
 leaveANote.controller('MainCtrl', function(getAllNotes, $scope) {
