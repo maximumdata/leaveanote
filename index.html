@@ -1,0 +1,48 @@
+<!doctype html>
+<html ng-app="leaveANote">
+	<head>
+		<title>Hello AngularJS</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular-resource.min.js" charset="utf-8"></script>
+    <script src="paginate/dirPagination.js" charset="utf-8"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	</head>
+
+	<body ng-controller="MainCtrl">
+    <div class="wrap">
+      <section class="form">
+				<h1>Leave a new note:</h1>
+        <form name="postForm" ng-submit="saveNote()">
+					<label for="name">Name:</label>
+          <input id="name" type="text" placeholder="Name" name="name" ng-model="form.name">
+					<label for="body">Message:</label>
+          <input id="body" type="text" placeholder="Message" name="body" ng-model="form.body">
+          <button disabled id="submit" type="submit">Submit</button>
+        </form>
+      </section>
+      <section class="notes">
+        <h1>Notes:</h1>
+				<section class="pages">
+	        <dir-pagination-controls></dir-pagination-controls>
+	      </section>
+        <ul>
+          <li dir-paginate="note in data | itemsPerPage: 5">
+            <div class="note">
+              <div class="info">
+                <div class="name">Name: {{note.name}}</div>
+                <div class="date">Date: {{note.date | date:'MM/dd/yyyy'}}, at {{note.date | date:'hh:mma'}}</div>
+              </div>
+              <div class="body">
+                Message: {{note.body}}
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+    </div>
+		<script src="helpers.js" charset="utf-8"></script>
+	</body>
+</html>

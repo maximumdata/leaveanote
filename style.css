@@ -1,0 +1,83 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+.wrap {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.form {
+  text-align: center;
+}
+
+button {
+  font-size: .88rem;
+}
+
+.notes ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.notes ul li .note {
+  background-color: #143550;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 10px 0;
+}
+
+.notes ul li .note .info {
+  background: #F4F5F0;
+  border-radius: 5px;
+  padding: 10px;
+  position: relative;
+}
+
+.notes ul li .note .info div {
+  display: inline-block;
+}
+.notes ul li .note .info .date {
+  position: absolute;
+  right: 10px;
+  font-size: .88rem;
+}
+
+.notes ul li .note .body {
+  padding: 10px;
+  background-color: #eee;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+.pages ul {
+  margin: 10px 0;
+  padding: 0;
+  list-style-type: none;
+  font-size: 1.25rem;
+}
+
+.pages ul li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.pages ul li:first-of-type {
+  margin-left: 0;
+}
+
+.pages ul li a {
+  text-decoration: none;
+}
+
+.pages ul li.disabled a {
+  color: grey;
+
+}
