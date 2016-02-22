@@ -17,8 +17,10 @@
         <form name="postForm" ng-submit="saveNote()">
 					<label for="name">Name:</label>
           <input id="name" type="text" placeholder="Name" name="name" ng-model="form.name">
+					<br>
 					<label for="body">Message:</label>
           <input id="body" type="text" placeholder="Message" name="body" ng-model="form.body">
+					<br>
           <button disabled id="submit" type="submit">Submit</button>
         </form>
       </section>
@@ -41,7 +43,6 @@
           </li>
         </ul>
       </section>
-
     </div>
 		<script src="helpers.js" charset="utf-8"></script>
 	</body>
