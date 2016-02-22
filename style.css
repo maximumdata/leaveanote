@@ -55,6 +55,14 @@ button {
   top: calc(50% - .375rem);
   font-size: .75rem;
 }
+@media screen and (max-width: 767px) {
+  .notes ul li .note .info .date {
+    position: relative;
+    right: auto;
+    top: auto;
+    display: block;
+  }
+}
 
 .notes ul li .note .body {
   padding: 10px;
