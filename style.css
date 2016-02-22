@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html, body {
   padding: 0;
   margin: 0;
@@ -11,6 +15,7 @@ html, body {
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .form {
@@ -47,7 +52,8 @@ button {
 .notes ul li .note .info .date {
   position: absolute;
   right: 10px;
-  font-size: .88rem;
+  top: calc(50% - .375rem);
+  font-size: .75rem;
 }
 
 .notes ul li .note .body {
