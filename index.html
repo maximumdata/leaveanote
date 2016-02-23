@@ -41,6 +41,9 @@
               <div class="body">
                 Message: {{note.body}}
               </div>
+							<div class="meta">
+								Votes: {{note.meta}} | <a class="up" href ng-click='vote(note._id, "up")'>Vote up</a> | <a class="down" href ng-click="vote(note._id, 'down')">Vote Down</a>
+							</div>
             </div>
           </li>
         </ul>

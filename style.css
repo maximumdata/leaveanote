@@ -67,7 +67,7 @@ button {
 .notes ul li .note .body {
   padding: 10px;
   background-color: #eee;
-  margin-top: 5px;
+  margin: 5px 0;
   border-radius: 5px;
 }
 
@@ -93,5 +93,18 @@ button {
 
 .pages ul li.disabled a {
   color: grey;
+}
 
+.meta {
+  padding: 5px;
+  color: white;
+  font-size: .88rem;
+}
+
+.meta .up {
+  color: lightgreen;
+}
+
+.meta .down {
+  color: red;
 }
