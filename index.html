@@ -26,12 +26,12 @@
           <button disabled id="submit" type="submit">Submit</button>
         </form>
       </section>
-      <section class="notes">
+      <section class="notes" >
         <h1>Notes:</h1>
 				<section class="pages">
 	        <dir-pagination-controls></dir-pagination-controls>
 	      </section>
-        <ul>
+        <ul ng-cloak>
           <li dir-paginate="note in data | itemsPerPage: 5">
             <div class="note">
               <div class="info">
